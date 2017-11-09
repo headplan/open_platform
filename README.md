@@ -1,3 +1,6 @@
-# My Awesome Book
+# 微信公众平台开发
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+关于微信公众平台开发的笔记
+
+本地测试 : Learning\_WeiXin仓库
+
