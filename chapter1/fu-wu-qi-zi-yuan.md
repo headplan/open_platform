@@ -22,9 +22,7 @@
 
 ![](/assets/gitbanben.png)
 
-至此，就成功创建了一个域名URL为http://headplan.sinaapp.com/ 的SAE应用 , 新创建的版本还会生成一个以版本号命名的三级域名
+至此，就成功创建了一个域名URL为[http://headplan.sinaapp.com/](http://headplan.sinaapp.com/) 的SAE应用 , 新创建的版本还会生成一个以版本号命名的三级域名
 
-http://1.headplan.sinaapp.com/后续不会使用 , 暂做了解 . 
-
-
+http://1.headplan.sinaapp.com/ 后续不会使用 , 暂做了解 .
 
