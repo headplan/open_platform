@@ -9,6 +9,6 @@
     * [本地环境](chapter1/ben-di-huan-jing.md)
     * [服务器资源](chapter1/fu-wu-qi-zi-yuan.md)
     * [开发者配置](chapter1/kai-fa-zhe-pei-zhi.md)
-
-
+      * [错误调试](chapter1/kai-fa-zhe-pei-zhi/cuo-wu-diao-shi.md)
+    * 消息交互原理
 
