@@ -7,4 +7,5 @@
     * [平台使用](chapter1/ping-tai-jie-shao/ping-tai-shi-yong.md)
   * [本地环境](chapter1/ben-di-huan-jing.md)
   * [服务器资源](chapter1/fu-wu-qi-zi-yuan.md)
+  * [开发者配置](chapter1/kai-fa-zhe-pei-zhi.md)
 
