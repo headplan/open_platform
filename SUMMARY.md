@@ -11,5 +11,6 @@
     * [开发者配置](chapter1/kai-fa-zhe-pei-zhi.md)
       * [错误调试](chapter1/kai-fa-zhe-pei-zhi/cuo-wu-diao-shi.md)
       * [Python配置](chapter1/kai-fa-zhe-pei-zhi/pythonpei-zhi.md)
+      * [验证逻辑流程图](chapter1/kai-fa-zhe-pei-zhi/yan-zheng-luo-ji-liu-cheng-tu.md)
     * [消息交互原理](chapter1/xiao-xi-jiao-hu-yuan-li.md)
 
