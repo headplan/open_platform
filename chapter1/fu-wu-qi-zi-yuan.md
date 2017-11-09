@@ -22,7 +22,30 @@
 
 ![](/assets/gitbanben.png)
 
-至此，就成功创建了一个域名URL为[http://headplan.sinaapp.com/](http://headplan.sinaapp.com/) 的SAE应用 , 新创建的版本还会生成一个以版本号命名的三级域名
+至此，就成功创建了一个域名URL为[http://abc.sinaapp.com/](http://headplan.sinaapp.com/) 的SAE应用 , 新创建的版本还会生成一个以版本号命名的三级域名
 
-http://1.headplan.sinaapp.com/ 后续不会使用 , 暂做了解 .
+[http://1.abc](http://1.headplan.sinaapp.com/)[.sinaapp.com/](http://1.headplan.sinaapp.com/) 后续不会使用 , 暂做了解 .
+
+SAE支持Git、SVN、代码打包上传三种提交方式 , 这里随便使用了Git的方式 . 
+
+**仓库信息**
+
+| 仓库地址 | https://git.sinacloud.com/abc |
+| :--- | :--- |
+| 用户名 | abc@abc.com |
+| 密码 | 您的安全密码 |
+
+**Git代码部署说明**
+
+    在你应用代码目录里，克隆git远程仓库
+    $ git clone https://git.sinacloud.com/abc
+    输入您的安全邮箱和密码。
+    $ cd abc
+
+    编辑代码并将代码部署到 `origin` 的版本1。
+    $ git add .
+    $ git commit -m 'Init my first app'
+    $ git push origin 1
+
+
 
