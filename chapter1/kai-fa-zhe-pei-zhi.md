@@ -39,5 +39,44 @@
 * 将三个参数字符串拼接成一个字符串进行sha1加密
 * 开发者获得加密后的字符串可与signature对比，标识该请求来源于微信
 
+简单的PHP代码示例
+
+```
+<?php
+header('Content-type:text');
+WechatCallbackApiTest::valid();
+
+class WechatCallbackApiTest
+{
+    const TOKEN = 'FuckFair';
+    public static function valid()
+    {
+        $echoStr = $_GET["echostr"];
+        if(self::checkSignature()){
+            echo $echoStr;
+            exit;
+        }
+    }
+
+    private static function checkSignature()
+    {
+        $signature = $_GET["signature"];
+        $timestamp = $_GET["timestamp"];
+        $nonce = $_GET["nonce"];
+
+        $tmpArr = array(self::TOKEN, $timestamp, $nonce);
+        sort($tmpArr);
+        $tmpStr = implode( $tmpArr );
+        $tmpStr = sha1( $tmpStr );
+
+        if( $tmpStr == $signature ){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+```
+
 
 
