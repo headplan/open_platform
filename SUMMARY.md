@@ -10,5 +10,6 @@
     * [服务器资源](chapter1/fu-wu-qi-zi-yuan.md)
     * [开发者配置](chapter1/kai-fa-zhe-pei-zhi.md)
       * [错误调试](chapter1/kai-fa-zhe-pei-zhi/cuo-wu-diao-shi.md)
-    * 消息交互原理
+      * [Python配置](chapter1/kai-fa-zhe-pei-zhi/pythonpei-zhi.md)
+    * [消息交互原理](chapter1/xiao-xi-jiao-hu-yuan-li.md)
 
