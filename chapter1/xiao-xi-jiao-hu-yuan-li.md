@@ -89,5 +89,19 @@ TPL;
 }
 ```
 
+---
+
+这里多提一下关于PHP接收POST数据的问题 : 
+
+`$_POST`通过 HTTP POST 方法传递的变量组成的数组 , 是自动全局变量 . 
+
+`$GLOBALS['HTTP_RAW_POST_DATA']`总是产生 $HTTP\_RAW\_POST\_DATA 变量包含有原始的 POST 数据 . 此变量仅在碰到未识别 MIME 类型的数据时产生 . 
+
+通过解释 , 可以看到区别 , 此变量仅在碰到未识别 MIME 类型的数据时产生 . 也就是说PHP默认识别的数据类型是application/x-www.form-urlencoded标准的数据类型 , 无法识别时 , 可以用`$GLOBALS['HTTP_RAW_POST_DATA']`获取POST原始数据 , 比如我们前面微信用到的 text/xml 或者 soap 等等 , 但PHP新版的全局变量一般是Off的 , 所以建议使用`file_get_contents('php://input')`获取POST元数据 . 
+
+注意 : `$GLOBALS['HTTP_RAW_POST_DATA']`和`file_get_contents('php://input')`不能用于enctype="multipart/form-data"
+
+
+
 
 
