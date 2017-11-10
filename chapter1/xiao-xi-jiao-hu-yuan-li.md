@@ -55,38 +55,38 @@
 **代码示例**
 
 ```php
-    public static function responseMsg()
-    {
-        $post = file_get_contents('php://input');
+public static function responseMsg()
+{
+    $post = file_get_contents('php://input');
 
-        if (!empty($post)) {
-            $postXml = simplexml_load_string($post, 'SimpleXMLElement', LIBXML_NOCDATA);
-            $fromUserName = $postXml->FromUserName;
-            $toUserName = $postXml->ToUserName;
-            $content = trim($postXml->Content);
-            $createTime = time();
-            $textTpl = <<<TPL
-                <xml>
-                    <ToUserName><![CDATA[%s]]></ToUserName>
-                    <FromUserName><![CDATA[%s]]></FromUserName>
-                    <CreateTime>%s</CreateTime>
-                    <MsgType><![CDATA[%s]]></MsgType>
-                    <Content><![CDATA[%s]]></Content>
-                    <FuncFlag>0</FuncFlag>
-                </xml>
+    if (!empty($post)) {
+        $postXml = simplexml_load_string($post, 'SimpleXMLElement', LIBXML_NOCDATA);
+        $fromUserName = $postXml->FromUserName;
+        $toUserName = $postXml->ToUserName;
+        $content = trim($postXml->Content);
+        $createTime = time();
+        $textTpl = <<<TPL
+            <xml>
+                <ToUserName><![CDATA[%s]]></ToUserName>
+                <FromUserName><![CDATA[%s]]></FromUserName>
+                <CreateTime>%s</CreateTime>
+                <MsgType><![CDATA[%s]]></MsgType>
+                <Content><![CDATA[%s]]></Content>
+                <FuncFlag>0</FuncFlag>
+            </xml>
 TPL;
-            if ($content == '?' || $content == '？' || $content == '几点了') {
-                $msgType = 'text';
-                $withContent = '现在时间是:'.date('Y-m-d H:i:s',time());
-                $result = sprintf($textTpl, $fromUserName, $toUserName, $createTime, $msgType, $withContent);
-                echo $result;
-                exit;
-            }
-        } else {
-            echo 'success';
+        if ($content == '?' || $content == '？' || $content == '几点了') {
+            $msgType = 'text';
+            $withContent = '现在时间是:'.date('Y-m-d H:i:s',time());
+            $result = sprintf($textTpl, $fromUserName, $toUserName, $createTime, $msgType, $withContent);
+            echo $result;
             exit;
         }
+    } else {
+        echo 'success';
+        exit;
     }
+}
 ```
 
 
