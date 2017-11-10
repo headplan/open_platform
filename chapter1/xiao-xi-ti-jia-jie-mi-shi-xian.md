@@ -84,10 +84,10 @@ signature=35703636de2f9df2a77a662b68e521ce17c34db4&timestamp=1414243737&nonce=17
 
 > 具体的加密解密方案可以查看
 >
-> https://open.weixin.qq.com/cgi-bin/showdocument?action=dir\_list&t=resource/res\_list&verify=1&id=open1419318482&token=&lang=zh\_CN
+> [https://open.weixin.qq.com/cgi-bin/showdocument?action=dir\_list&t=resource/res\_list&verify=1&id=open1419318482&token=&lang=zh\_CN](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318482&token=&lang=zh_CN)
 
 ```
-
+# 代码查看Learning_WeiXin部分
 ```
 
 
