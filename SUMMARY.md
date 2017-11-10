@@ -15,4 +15,5 @@
     * [消息交互原理](chapter1/xiao-xi-jiao-hu-yuan-li.md)
     * [消息体加解密](chapter1/xiao-xi-ti-jia-jie-mi-shi-xian.md)
       * [错误码列表](chapter1/xiao-xi-ti-jia-jie-mi-shi-xian/cuo-wu-ma-lie-biao.md)
+    * [开发调试工具](chapter1/kai-fa-diao-shi-gong-ju.md)
 
