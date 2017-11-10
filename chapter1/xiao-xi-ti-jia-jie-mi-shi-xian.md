@@ -57,12 +57,23 @@ public static function traceHttp()
 }
 ```
 
+现在准备三个常量
+
 ```
-# 现在准备三个常量
 // @param sToken: 第三方平台申请时填写的接收消息的校验token
 // @param sEncodingAESKey: 第三方平台申请时填写的接收消息的加密symmetric_key
 // @param sAppid: 公众号第三方平台的appid
 ```
+
+准备加密解密函数
+
+当用户向公众账号发送消息时，微信公众账号将会在URL中带上signature、timestamp、nonce、encrypt\_type、msg\_signature等参数 : 
+
+```
+signature=35703636de2f9df2a77a662b68e521ce17c34db4&timestamp=1414243737&nonce=1792106704&encrypt_type=aes&msg_signature=6147984331daf7a1a9eed6e0ec3ba69055256154
+```
+
+
 
 
 
