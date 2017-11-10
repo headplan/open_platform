@@ -65,15 +65,26 @@ public static function traceHttp()
 // @param sAppid: 公众号第三方平台的appid
 ```
 
-准备加密解密函数
-
-当用户向公众账号发送消息时，微信公众账号将会在URL中带上signature、timestamp、nonce、encrypt\_type、msg\_signature等参数 : 
+当用户向公众账号发送消息时 , 微信公众账号将会在URL中带上signature、timestamp、nonce、encrypt\_type、msg\_signature等参数 :
 
 ```
 signature=35703636de2f9df2a77a662b68e521ce17c34db4&timestamp=1414243737&nonce=1792106704&encrypt_type=aes&msg_signature=6147984331daf7a1a9eed6e0ec3ba69055256154
 ```
 
+同时向该接口推送如下XML消息 , 即一个已加密的消息
 
+```
+<xml> 
+  <ToUserName><![CDATA[gh_680bdefc8c5d]]></ToUserName>  
+  <Encrypt><![CDATA[MNn4+jJ/VsFh2gUyKAaOJArwEVYCvVmyN0iXzNarP3O6vXzK62ft1/KG2/XPZ4y5bPWU/jfIfQxODRQ7sLkUsrDRqsWimuhIT8Eq+w4E/28m+XDAQKEOjWTQIOp1p6kNsIV1DdC3B+AtcKcKSNAeJDr7x7GHLx5DZYK09qQsYDOjP6R5NqebFjKt/NpEl/GU3gWFwG8LCtRNuIYdK5axbFSfmXbh5CZ6Bk5wSwj5fu5aS90cMAgUhGsxrxZTY562QR6c+3ydXxb+GHI5w+qA+eqJjrQqR7u5hS+1x5sEsA7vS+bZ5LYAR3+PZ243avQkGllQ+rg7a6TeSGDxxhvLw+mxxinyk88BNHkJnyK//hM1k9PuvuLAASdaud4vzRQlAmnYOslZl8CN7gjCjV41skUTZv3wwGPxvEqtm/nf5fQ=]]></Encrypt>
+</xml>
+```
+
+获取这些参数和消息 , 使用官方提供的加密解密类即可 : 
+
+```
+
+```
 
 
 
