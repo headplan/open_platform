@@ -80,7 +80,11 @@ signature=35703636de2f9df2a77a662b68e521ce17c34db4&timestamp=1414243737&nonce=17
 </xml>
 ```
 
-获取这些参数和消息 , 使用官方提供的加密解密类即可 : 
+获取这些参数和消息 , 使用官方提供的加密解密类即可 :
+
+> 具体的加密解密方案可以查看
+>
+> https://open.weixin.qq.com/cgi-bin/showdocument?action=dir\_list&t=resource/res\_list&verify=1&id=open1419318482&token=&lang=zh\_CN
 
 ```
 
