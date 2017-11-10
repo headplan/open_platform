@@ -1,12 +1,12 @@
 # 消息交互原理
 
-现在我们以一个简单的功能来体验一下微信的消息交互流程 . 
+现在我们以一个简单的功能来体验一下微信的消息交互流程 .
 
-功能描述 : 
+功能描述 :
 
-关注公众号的粉丝给公众号一条文本消息 , 公众号立马回复一条文本消息给粉丝 , 不需要通过公众平台网页操作 . 
+关注公众号的粉丝给公众号一条文本消息 , 公众号立马回复一条文本消息给粉丝 , 不需要通过公众平台网页操作 .
 
-我们先来看一下流程图 : 
+我们先来看一下流程图 :
 
 ![](/assets/xiaoxiliuchengtu.png)
 
@@ -32,7 +32,7 @@
 
 **被动回复文本消息**
 
-即公众号给粉丝发送的文本消息 , 公众号想回复给粉丝一条文本消息 , 内容为“有事吗?” , 那么开发者发送给公众平台后台的内容也是xml的内容 , 格式如下 : 
+即公众号给粉丝发送的文本消息 , 公众号想回复给粉丝一条文本消息 , 内容为“有事吗?” , 那么开发者发送给公众平台后台的内容也是xml的内容 , 格式如下 :
 
 ```
 <xml>
@@ -44,13 +44,50 @@
 </xml>
 ```
 
-标签含义也是一样的 . 
+标签含义也是一样的 .
 
 **回复success问题**
 
-查询官方wiki 开头强调 : , 如服务器无法保证在五秒内处理回复， 则必须回复"success"或者""\(空串\) , 否则微信后台会发起三次重试 . 
+查询官方wiki 开头强调 : , 如服务器无法保证在五秒内处理回复， 则必须回复"success"或者""\(空串\) , 否则微信后台会发起三次重试 .
 
-解释一下为何有这么奇怪的规定 . 发起重试是微信后台为了尽可以保证粉丝发送的内容开发者均可以收到 . 如果开发者不进行回复 , 微信后台没办法确认开发者已收到消息 , 只好重试 . 三次重试后 , 依旧没有及时回复任何内容 , 系统自动在粉丝会话界面出现错误提示"该公众号暂时无法提供服务 , 请稍后再试" . 如果回复success , 微信后台可以确定开发者收到了粉丝消息 , 没有任何异常提示 . 因此请大家注意回复success的问题 . 
+解释一下为何有这么奇怪的规定 . 发起重试是微信后台为了尽可以保证粉丝发送的内容开发者均可以收到 . 如果开发者不进行回复 , 微信后台没办法确认开发者已收到消息 , 只好重试 . 三次重试后 , 依旧没有及时回复任何内容 , 系统自动在粉丝会话界面出现错误提示"该公众号暂时无法提供服务 , 请稍后再试" . 如果回复success , 微信后台可以确定开发者收到了粉丝消息 , 没有任何异常提示 . 因此请大家注意回复success的问题 .
+
+**代码示例**
+
+```php
+    public static function responseMsg()
+    {
+        $post = file_get_contents('php://input');
+
+        if (!empty($post)) {
+            $postXml = simplexml_load_string($post, 'SimpleXMLElement', LIBXML_NOCDATA);
+            $fromUserName = $postXml->FromUserName;
+            $toUserName = $postXml->ToUserName;
+            $content = trim($postXml->Content);
+            $createTime = time();
+            $textTpl = <<<TPL
+                <xml>
+                    <ToUserName><![CDATA[%s]]></ToUserName>
+                    <FromUserName><![CDATA[%s]]></FromUserName>
+                    <CreateTime>%s</CreateTime>
+                    <MsgType><![CDATA[%s]]></MsgType>
+                    <Content><![CDATA[%s]]></Content>
+                    <FuncFlag>0</FuncFlag>
+                </xml>
+TPL;
+            if ($content == '?' || $content == '？' || $content == '几点了') {
+                $msgType = 'text';
+                $withContent = '现在时间是:'.date('Y-m-d H:i:s',time());
+                $result = sprintf($textTpl, $fromUserName, $toUserName, $createTime, $msgType, $withContent);
+                echo $result;
+                exit;
+            }
+        } else {
+            echo 'success';
+            exit;
+        }
+    }
+```
 
 
 
