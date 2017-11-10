@@ -12,9 +12,29 @@
 
 > 微信官方提供的消息加解密接入指引 :
 >
-> [https://open.weixin.qq.com/cgi-bin/showdocument?action=dir\_list&t=resource/res\_list&verify=1&id=open1419318479&token=&lang=zh\_CN](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)
+> [https://open.weixin.qq.com/cgi-bin/showdocument?action=dir\_list&t=resource/res\_list&verify=1&id=open1419318479&token=⟨=zh\_CN](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)
 
+我们先来看看指引的内容 : 
 
+开发者在代替授权公众号接收和处理消息时，出于安全考虑，必须对消息收发的过程进行必须的加解密。
 
+> **开发者在接收消息和事件时，都需要进行消息加解密（某些事件可能需要回复，回复时也需要先进行加密）。但是，通过API主动调用接口（包括调用客服消息接口发消息）时，不需要进行加密。**
 
+公众号第三方平台可能会接收到两种类型的消息 : 
+
+1、用户发送给公众号的消息（由公众号第三方平台代收）。此时，消息XML体中，ToUserName（即接收者）为公众号的原始ID（可通过《接口说明》中的获取授权方信息接口来获得）。
+
+2、微信服务器发送给服务自身的事件推送（如取消授权通知，Ticket推送等）。此时，消息XML体中没有ToUserName字段，而是AppId字段，即公众号服务的AppId。这种系统事件推送通知（现在包括推送component\_verify\_ticket协议和推送取消授权通知），服务开发者收到后也需进行解密，接收到后只需直接返回字符串“success”。
+
+下面是具体消息加解密的做法 , 当关注者与已授权公众号进行交互时，公众号第三方平台将接收到相应的消息推送、事件推送。为了加强安全性，将对此过程进行2个措施 : 
+
+1、在接收已授权公众号消息和事件的URL中，增加2个参数（此前已有2个参数，为时间戳 timestamp，随机数nonce），分别是encrypt\_type（加密类型，为aes）和msg\_signature（消息体签名，用于验证消息体的正确性）
+
+2、postdata中的XML体，将使用第三方平台申请时的接收消息的加密symmetric\_key（也称为EncodingAESKey）来进行加密。
+
+**下面开始动手实现**
+
+```
+
+```
 
