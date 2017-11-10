@@ -1,6 +1,8 @@
 # 消息体加解密
 
-消息的交互已经可以了 , 我们前面还留下一个问题 , 就是配置服务器资源时的消息加解密方式问题 . 
+> 因为新浪SAE在未实名认证会影响加密验证 , 这里转用个人服务器 , 也方便打log
+
+消息的交互已经可以了 , 我们前面还留下一个问题 , 就是配置服务器资源时的消息加解密方式问题 .
 
 微信公众平台在配置服务器时，提供了3种加解密的模式供开发者选择，即明文模式、兼容模式、安全模式，选择兼容模式和安全模式前，需在开发者中心填写AES对称加密算法的消息加解密密钥EncodingAESKey。公众帐号用此秘钥对收到的密文消息体进行解密，回复消息体也用此秘钥加密。
 
@@ -8,9 +10,11 @@
 * 兼容模式：公众平台发送消息内容将同时包括明文和密文，消息包长度增加到原来的3倍左右；公众号回复明文或密文均可，不影响现有消息收发；开发者可在此模式下进行调试
 * 安全模式（推荐）：公众平台发送消息体的内容只含有密文，公众账号回复的消息体也为密文，建议开发者在调试成功后使用此模式收发消息
 
-> 微信官方提供的消息加解密接入指引 : 
+> 微信官方提供的消息加解密接入指引 :
 >
-> https://open.weixin.qq.com/cgi-bin/showdocument?action=dir\_list&t=resource/res\_list&verify=1&id=open1419318479&token=&lang=zh\_CN
+> [https://open.weixin.qq.com/cgi-bin/showdocument?action=dir\_list&t=resource/res\_list&verify=1&id=open1419318479&token=&lang=zh\_CN](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419318479&token=&lang=zh_CN)
+
+
 
 
 
