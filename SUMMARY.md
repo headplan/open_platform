@@ -18,6 +18,7 @@
     * [开发调试工具](chapter1/kai-fa-diao-shi-gong-ju.md)
   * [收发消息](chapter1/shou-fa-xiao-xi.md)
     * [接收普通消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi.md)
+      * [文本消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi/wen-ben-xiao-xi.md)
     * 发送被动回复消息
     * 接收事件推送消息
     * 示例代码
