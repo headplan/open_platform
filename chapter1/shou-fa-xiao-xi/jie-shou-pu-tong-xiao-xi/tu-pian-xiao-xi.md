@@ -2,13 +2,13 @@
 
 ```xml
 <xml>
- <ToUserName><![CDATA[toUser]]></ToUserName>
- <FromUserName><![CDATA[fromUser]]></FromUserName>
- <CreateTime>1348831860</CreateTime>
- <MsgType><![CDATA[image]]></MsgType>
- <PicUrl><![CDATA[this is a url]]></PicUrl>
- <MediaId><![CDATA[media_id]]></MediaId>
- <MsgId>1234567890123456</MsgId>
+<ToUserName><![CDATA[toUser]]></ToUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
+<CreateTime>1348831860</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[this is a url]]></PicUrl>
+<MediaId><![CDATA[media_id]]></MediaId>
+<MsgId>1234567890123456</MsgId>
 </xml>
 ```
 
@@ -22,7 +22,7 @@
 | MediaId | 图片消息媒体id，可以调用多媒体文件下载接口拉取数据。 |
 | MsgId | 消息id，64位整型 |
 
-接口调试工具 : 
+接口调试工具 :
 
 [https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=消息接口调试&form=图片消息](https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=消息接口调试&form=图片消息)
 
