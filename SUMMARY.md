@@ -23,6 +23,7 @@
       * [语音消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi/yu-yin-xiao-xi.md)
       * [视频消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi/shi-pin-xiao-xi.md)
       * [小视频消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi/xiao-shi-pin-xiao-xi.md)
+      * [地理位置消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi/di-li-wei-zhi-xiao-xi.md)
     * 发送被动回复消息
     * 接收事件推送消息
     * 示例代码
