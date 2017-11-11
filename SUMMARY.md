@@ -25,9 +25,13 @@
         * [小视频消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi/xiao-shi-pin-xiao-xi.md)
       * [地理位置消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi/di-li-wei-zhi-xiao-xi.md)
       * [链接消息](chapter1/shou-fa-xiao-xi/jie-shou-pu-tong-xiao-xi/lian-jie-xiao-xi.md)
-    * 发送被动回复消息
+    * [发送被动回复消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi.md)
+      * [回复文本消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-wen-ben-xiao-xi.md)
+      * 回复图片消息
+      * 回复语音消息
+      * [回复视频消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-shi-pin-xiao-xi.md)
+      * [回复音乐消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-yin-le-xiao-xi.md)
+      * [回复图文消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-tu-wen-xiao-xi.md)
     * 接收事件推送消息
     * 示例代码
-
-
 
