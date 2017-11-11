@@ -28,7 +28,7 @@
     * [发送被动回复消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi.md)
       * [回复文本消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-wen-ben-xiao-xi.md)
       * [回复图片消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-tu-pian-xiao-xi.md)
-      * 回复语音消息
+      * [回复语音消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-yu-yin-xiao-xi.md)
       * [回复视频消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-shi-pin-xiao-xi.md)
       * [回复音乐消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-yin-le-xiao-xi.md)
       * [回复图文消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-tu-wen-xiao-xi.md)
