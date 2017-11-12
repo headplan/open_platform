@@ -28,5 +28,5 @@
 | MsgType | 消息类型，event |
 | Event | 事件类型，subscribe\(订阅\)、unsubscribe\(取消订阅\) |
 
-
+接口调试工具 : https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=%E6%B6%88%E6%81%AF%E6%8E%A5%E5%8F%A3%E8%B0%83%E8%AF%95&form=%E4%BA%8B%E4%BB%B6%E6%B6%88%E6%81%AF
 
