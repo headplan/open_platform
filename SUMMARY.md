@@ -12,6 +12,7 @@
       * [错误调试](chapter1/kai-fa-zhe-pei-zhi/cuo-wu-diao-shi.md)
       * [Python配置](chapter1/kai-fa-zhe-pei-zhi/pythonpei-zhi.md)
       * [验证逻辑流程图](chapter1/kai-fa-zhe-pei-zhi/yan-zheng-luo-ji-liu-cheng-tu.md)
+    * [Access Token](chapter1/access-token.md)
     * [消息交互原理](chapter1/xiao-xi-jiao-hu-yuan-li.md)
     * [消息体加解密](chapter1/xiao-xi-ti-jia-jie-mi-shi-xian.md)
       * [错误码列表](chapter1/xiao-xi-ti-jia-jie-mi-shi-xian/cuo-wu-ma-lie-biao.md)
@@ -39,5 +40,5 @@
       * 自定义菜单事件
       * 点击菜单拉取消息时的事件推送
       * 点击菜单跳转链接时的事件推送
-    * 示例代码
+    * [示例代码](chapter1/shou-fa-xiao-xi/shi-li-dai-ma.md)
 
