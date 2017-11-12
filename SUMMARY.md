@@ -32,6 +32,7 @@
       * [回复视频消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-shi-pin-xiao-xi.md)
       * [回复音乐消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-yin-le-xiao-xi.md)
       * [回复图文消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-tu-wen-xiao-xi.md)
-    * 接收事件推送消息
+    * [接收事件推送消息](chapter1/shou-fa-xiao-xi/jie-shou-shi-jian-tui-song-xiao-xi.md)
+      * [关注/取消关注事件](chapter1/shou-fa-xiao-xi/jie-shou-shi-jian-tui-song-xiao-xi/guan-6ce8-qu-xiao-guan-zhu-shi-jian.md)
     * 示例代码
 
