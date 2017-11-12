@@ -34,5 +34,10 @@
       * [回复图文消息](chapter1/shou-fa-xiao-xi/fa-song-bei-dong-hui-fu-xiao-xi/hui-fu-tu-wen-xiao-xi.md)
     * [接收事件推送消息](chapter1/shou-fa-xiao-xi/jie-shou-shi-jian-tui-song-xiao-xi.md)
       * [关注/取消关注事件](chapter1/shou-fa-xiao-xi/jie-shou-shi-jian-tui-song-xiao-xi/guan-6ce8-qu-xiao-guan-zhu-shi-jian.md)
+      * 扫描带参数二维码事件
+      * 上报地理位置事件
+      * 自定义菜单事件
+      * 点击菜单拉取消息时的事件推送
+      * 点击菜单跳转链接时的事件推送
     * 示例代码
 
