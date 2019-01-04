@@ -24,5 +24,7 @@ AppID - 在开发设置页面查看AppID和AppSecret , 配置服务器域名 . �
 
 **第一行代码**
 
-编辑index文件夹下的index.wxml , 输入 hello world! . 然后点击预览 , 有二维码预览 , 和自动预览两个选项 , 这里选择自动预览\(编译并预览\) . 
+编辑index文件夹下的index.wxml , 输入 hello world! . 然后点击预览 , 有二维码预览 , 和自动预览两个选项 , 这里选择自动预览\(编译并预览\) .
+
+OK!
 
