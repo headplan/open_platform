@@ -43,4 +43,5 @@
       * 点击菜单拉取消息时的事件推送
       * 点击菜单跳转链接时的事件推送
     * [示例代码](chapter1/shou-fa-xiao-xi/shi-li-dai-ma.md)
+* [微信小程序](wei-xin-xiao-cheng-xu.md)
 
