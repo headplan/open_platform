@@ -4,7 +4,13 @@
 
 每个页面都应有明确的重点，以便于用户每进入一个新页面的时候都能快速地理解页面内容。在确定了重点的前提下，应尽量避免页面上出现其它与用户的决策和操作无关的干扰因素。
 
-![](/assets/zhongdiantuchu1.png)
+![](/assets/zhongdiantuchu1.png)![](/assets/zhongdiantuchu2.png)
 
-![](/assets/zhongdiantuchu2.png)
+### 流程明确 {#流程明确}
+
+为了让用户顺畅地使用页面，在用户进行某一个操作流程时，应避免出现用户目标流程之外的内容而打断用户。
+
+![](/assets/liuchengmingque.png)
+
+
 
