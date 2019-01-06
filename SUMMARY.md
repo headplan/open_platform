@@ -45,7 +45,7 @@
     * [示例代码](chapter1/shou-fa-xiao-xi/shi-li-dai-ma.md)
 * [微信小程序](wei-xin-xiao-cheng-xu.md)
   * [介绍](wei-xin-xiao-cheng-xu/jieshao.md)
-    * 微信小程序接入指南
+    * [微信小程序接入指南](wei-xin-xiao-cheng-xu/jieshao/wei-xin-xiao-cheng-xu-jie-ru-zhi-nan.md)
     * 客服功能使用指南
     * 扫码打开小程序接入指南
     * 插件接入指南
