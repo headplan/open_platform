@@ -44,5 +44,15 @@
       * 点击菜单跳转链接时的事件推送
     * [示例代码](chapter1/shou-fa-xiao-xi/shi-li-dai-ma.md)
 * [微信小程序](wei-xin-xiao-cheng-xu.md)
-  * [开发工具界面](wei-xin-xiao-cheng-xu/kai-fa-gong-ju-jie-mian.md)
+  * [介绍](wei-xin-xiao-cheng-xu/jieshao.md)
+    * 微信小程序接入指南
+    * 客服功能使用指南
+    * 扫码打开小程序接入指南
+    * 插件接入指南
+    * 搜索Widget接入指南
+  * [设计](wei-xin-xiao-cheng-xu/she-ji.md)
+  * 开发
+  * [运营](wei-xin-xiao-cheng-xu/yun-ying.md)
+  * [数据](wei-xin-xiao-cheng-xu/shu-ju.md)
+  * [社区](wei-xin-xiao-cheng-xu/she-qu.md)
 
