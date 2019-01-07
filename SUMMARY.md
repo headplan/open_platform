@@ -52,6 +52,8 @@
     * 搜索Widget接入指南
   * [设计](wei-xin-xiao-cheng-xu/she-ji.md)
     * [清晰明确](wei-xin-xiao-cheng-xu/she-ji/qing-xi-ming-que.md)
+    * 便捷优雅
+    * 视觉规范
   * 开发
   * [运营](wei-xin-xiao-cheng-xu/yun-ying.md)
   * [数据](wei-xin-xiao-cheng-xu/shu-ju.md)
