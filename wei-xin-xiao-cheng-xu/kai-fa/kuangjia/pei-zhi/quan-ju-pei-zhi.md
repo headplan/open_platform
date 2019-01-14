@@ -91,6 +91,22 @@
 
 ##### window
 
+用于设置小程序的状态栏 , 导航条 , 标题 , 窗口背景色 . 
+
+| 属性 | 类型 | 默认值 | 描述 | 最低版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| navigationBarBackgroundColor | HexColor | \#000000 | 导航栏背景颜色，如`#000000` |  |
+| navigationBarTextStyle | String | white | 导航栏标题颜色，仅支持`black`/`white` |  |
+| navigationBarTitleText | String |  | 导航栏标题文字内容 |  |
+| navigationStyle | String | default | 导航栏样式，仅支持以下值： `default`默认样式 `custom`自定义导航栏，只保留右上角胶囊按钮。参见注2。 | 微信客户端 6.6.0 |
+| backgroundColor | HexColor | \#ffffff | 窗口的背景色 |  |
+| backgroundTextStyle | String | dark | 下拉 loading 的样式，仅支持`dark`/`light` |  |
+| backgroundColorTop | String | \#ffffff | 顶部窗口的背景色，仅 iOS 支持 | 微信客户端 6.5.16 |
+| backgroundColorBottom | String | \#ffffff | 底部窗口的背景色，仅 iOS 支持 | 微信客户端 6.5.16 |
+| enablePullDownRefresh | Boolean | false | 是否开启当前页面的下拉刷新。 详见[Page.onPullDownRefresh](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html#onpulldownrefresh) |  |
+| onReachBottomDistance | Number | 50 | 页面上拉触底事件触发时距页面底部距离，单位为px。 详见[Page.onReachBottom](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html#onreachbottom) |  |
+| pageOrientation | String | portrait | 屏幕旋转设置，仅支持`auto`/`portrait` 详见[响应显示区域变化](https://developers.weixin.qq.com/miniprogram/dev/framework/view/resizable.html) | 微信客户端 6.7.3 |
+
 
 
 
