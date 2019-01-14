@@ -57,3 +57,33 @@
 
 用于指定小程序由哪些页面组成 , 每一项都对应一个页面的路径+文件名信息 . 文件名不需要写文件后缀 , 框架会自动去寻找对于位置的`.json`,`.js`,`.wxml`,`.wxss`四个文件进行处理 . 
 
+**数组的第一项代表小程序的初始页面\(首页\) . 小程序中新增/减少页面 , 都需要对 pages 数组进行修改 . **
+
+例如开发目录为 : 
+
+```
+├── app.js
+├── app.json
+├── app.wxss
+├── pages
+│   │── index
+│   │   ├── index.wxml
+│   │   ├── index.js
+│   │   ├── index.json
+│   │   └── index.wxss
+│   └── logs
+│       ├── logs.wxml
+│       └── logs.js
+└── utils
+```
+
+则需要在app.json中写 : 
+
+```js
+{
+  "pages": ["pages/index/index", "pages/logs/logs"]
+}
+```
+
+
+
