@@ -53,13 +53,15 @@
 | [usingComponents](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html#usingcomponents) | Object | 否 | 全局自定义组件配置 | 开发者工具 1.02.1810190 |
 | [permission](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html#permission) | Object | 否 | 小程序接口权限相关设置 | 微信客户端 7.0.0 |
 
+---
+
 ##### pages
 
-用于指定小程序由哪些页面组成 , 每一项都对应一个页面的路径+文件名信息 . 文件名不需要写文件后缀 , 框架会自动去寻找对于位置的`.json`,`.js`,`.wxml`,`.wxss`四个文件进行处理 . 
+用于指定小程序由哪些页面组成 , 每一项都对应一个页面的路径+文件名信息 . 文件名不需要写文件后缀 , 框架会自动去寻找对于位置的`.json`,`.js`,`.wxml`,`.wxss`四个文件进行处理 .
 
 **数组的第一项代表小程序的初始页面\(首页\) . 小程序中新增/减少页面 , 都需要对 pages 数组进行修改 . **
 
-例如开发目录为 : 
+例如开发目录为 :
 
 ```
 ├── app.js
@@ -77,13 +79,19 @@
 └── utils
 ```
 
-则需要在app.json中写 : 
+则需要在app.json中写 :
 
 ```js
 {
   "pages": ["pages/index/index", "pages/logs/logs"]
 }
 ```
+
+---
+
+##### window
+
+
 
 
 
