@@ -47,15 +47,18 @@
   * [介绍](wei-xin-xiao-cheng-xu/jieshao.md)
     * [微信小程序接入指南](wei-xin-xiao-cheng-xu/jieshao/wei-xin-xiao-cheng-xu-jie-ru-zhi-nan.md)
     * 客服功能使用指南
-    * 扫码打开小程序接入指南
-    * 插件接入指南
-    * 搜索Widget接入指南
+    * [扫码打开小程序接入指南](wei-xin-xiao-cheng-xu/jieshao/sao-ma-da-kai-xiao-cheng-xu-jie-ru-zhi-nan.md)
+    * [插件接入指南](wei-xin-xiao-cheng-xu/jieshao/cha-jian-jie-ru-zhi-nan.md)
+    * [搜索Widget接入指南](wei-xin-xiao-cheng-xu/jieshao/sou-suo-widget-jie-ru-zhi-nan.md)
   * [设计](wei-xin-xiao-cheng-xu/she-ji.md)
     * [清晰明确](wei-xin-xiao-cheng-xu/she-ji/qing-xi-ming-que.md)
-    * 便捷优雅
-    * 视觉规范
-  * 开发
+    * [便捷优雅](wei-xin-xiao-cheng-xu/she-ji/bian-jie-you-ya.md)
+    * [视觉规范](wei-xin-xiao-cheng-xu/she-ji/shi-jue-gui-fan.md)
+  * [开发](wei-xin-xiao-cheng-xu/kai-fa.md)
+    * [框架](wei-xin-xiao-cheng-xu/kai-fa/kuangjia.md)
+    * [JS](wei-xin-xiao-cheng-xu/kai-fa/js.md)
   * [运营](wei-xin-xiao-cheng-xu/yun-ying.md)
   * [数据](wei-xin-xiao-cheng-xu/shu-ju.md)
   * [社区](wei-xin-xiao-cheng-xu/she-qu.md)
+  * [项目](wei-xin-xiao-cheng-xu/xiang-mu.md)
 
