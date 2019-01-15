@@ -113,5 +113,7 @@
   * 客户端 6.7.2 版本开始 , `navigationStyle: custom`对[`<web-view>`](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html)组件无效
   * 开启 custom 后 , 低版本客户端需要做好兼容 . 开发者工具基础库版本切到 1.7.0\(不代表最低版本 , 只供调试用\)可方便切到旧视觉 . 
 
+![](/assets/windowshili.png)
+
 
 
