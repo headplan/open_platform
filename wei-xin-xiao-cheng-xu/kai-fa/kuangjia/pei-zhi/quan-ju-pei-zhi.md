@@ -91,7 +91,7 @@
 
 ##### window
 
-用于设置小程序的状态栏 , 导航条 , 标题 , 窗口背景色 . 
+用于设置小程序的状态栏 , 导航条 , 标题 , 窗口背景色 .
 
 | 属性 | 类型 | 默认值 | 描述 | 最低版本 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -107,7 +107,11 @@
 | onReachBottomDistance | Number | 50 | 页面上拉触底事件触发时距页面底部距离，单位为px。 详见[Page.onReachBottom](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html#onreachbottom) |  |
 | pageOrientation | String | portrait | 屏幕旋转设置，仅支持`auto`/`portrait` 详见[响应显示区域变化](https://developers.weixin.qq.com/miniprogram/dev/framework/view/resizable.html) | 微信客户端 6.7.3 |
 
-
+* 注1 : HexColor\(十六进制颜色值\) , 如"\#ff00ff"
+* 注2：关于`navigationStyle`
+  * 客户端 7.0.0 以下版本 , `navigationStyle`只在`app.json`中生效。
+  * 客户端 6.7.2 版本开始 , `navigationStyle: custom`对[`<web-view>`](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html)组件无效
+  * 开启 custom 后 , 低版本客户端需要做好兼容 . 开发者工具基础库版本切到 1.7.0\(不代表最低版本 , 只供调试用\)可方便切到旧视觉 . 
 
 
 
